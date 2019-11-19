@@ -345,7 +345,7 @@
   var _for = { keyword: "for" }, _from = { keyword: "from" }, _global = { keyword: "global" };
   var _if = { keyword: "if" }, _import = { keyword: "import" };
   var _lambda = { keyword: "lambda" }, _nonlocal = { keyword: "nonlocal" };
-  var _pass = { keyword: "pass" }, _raise = { keyword: "raise" };
+  var _pass = { keyword: "pass" }, _raise = { keyword: "raise" }, _assert = { keyword: "assert", beforeExpr: true };
   var _return = { keyword: "return", beforeExpr: true }, _try = { keyword: "try" };
   var _while = { keyword: "while" }, _with = { keyword: "with" }, _yield = { keyword: "yield" };
 
@@ -375,7 +375,7 @@
     "from": _from, "global": _global, "if": _if, "import": _import, "in": _in, "is": _is,
     "lambda": _lambda, "nonlocal": _nonlocal, "not": _not, "or": _or,
     "pass": _pass, "raise": _raise, "return": _return, "try": _try, "while": _while,
-    "with": _with, "yield": _yield
+    "with": _with, "yield": _yield, "assert": _assert
   };
 
   // Punctuation token types. Again, the `type` property is purely for debugging.
